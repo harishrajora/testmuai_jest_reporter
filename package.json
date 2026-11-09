@@ -1,0 +1,45 @@
+{
+  "name": "@testmuai/jest-reporter",
+  "version": "0.1.0",
+  "description": "Jest reporter that sends Passed/Failed results to TestMu AI Test Manager for tests run anywhere.",
+  "main": "src/index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harishrajora/testmuai_jest_reporter.git"
+  },
+  "homepage": "https://github.com/harishrajora/testmuai_jest_reporter#readme",
+  "bugs": {
+    "url": "https://github.com/harishrajora/testmuai_jest_reporter/issues"
+  },
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test --test-timeout=200000 test/unit/*.test.js test/e2e/*.test.js",
+    "test:unit": "node --test test/unit/*.test.js",
+    "test:e2e": "node --test --test-timeout=200000 test/e2e/*.test.js"
+  },
+  "keywords": [
+    "jest",
+    "reporter",
+    "jest-reporter",
+    "test-manager",
+    "testmu",
+    "lambdatest",
+    "test-management"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "jest": ">=27.0.0"
+  },
+  "devDependencies": {
+    "jest": "30.2.0"
+  }
+}
